@@ -10,6 +10,7 @@
 body
     font-family: Barlow
     overflow-x: hidden
+    overflow-y: hidden
 
 .container
     width: 100%
@@ -63,11 +64,60 @@ body
     .home
         width: 100%
         height: 100vh
-        background-image: url('/assets/Home/background-home-mobile.png')
-        background-size: 100%
-        background-position: center
-        background-repeat: no-repeat
+        background: url('/assets/Home/a.png'), lightgray 0px 0px / 100% 100%
+        background-size: cover
+        mix-blend-mode: screen
         display: flex
         align-items: center
         justify-content: center
         color: white
+        &-content
+            display: flex
+            flex-flow: column
+            gap: 30px
+            padding-inline: 50px
+            align-items: center
+            text-align: center
+            margin-top: 50px
+            &-subtitle
+                font-size: 14px
+                color: #D0D6F9
+                letter-spacing: 5px
+                text-transform: uppercase
+            &-title
+                font-size: 80px 
+                font-weight: 400
+                font-family: Bellefair
+                text-transform: uppercase
+            &-body
+                line-height: 30px
+                font-size: 16px
+                color: #D0D6F9
+            &-explore
+                width: 150px
+                height: 150px
+                background-color: white
+                border-radius: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                color: black
+                position: relative
+                text-transform: uppercase
+                z-index: 2
+                cursor: pointer
+                margin-top: 50px
+                a 
+                    color: black
+                    text-decoration: none
+                &:hover::before
+                    scale: 2
+                &::before
+                    transition: scale 500ms ease-in-out
+                    content: ''
+                    width: 150px
+                    height: 150px
+                    background-color: rgba(255, 255, 255, 0.2)
+                    border-radius: 100%
+                    position: absolute
+                    z-index: -1
