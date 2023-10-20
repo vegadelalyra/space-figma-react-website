@@ -42,7 +42,6 @@ const Destination = () => {
     });
   };
 
-  // console.log(destinationData);
   return (
     <section className="background destination-page-container">
       <div className="destination-page-wrapper">

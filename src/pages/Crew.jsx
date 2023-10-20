@@ -63,6 +63,7 @@ const Crew = () => {
               className="dots"
               id={`crew-${item.id}`}
               onClick={() => handleClick(item)}
+              key={`crew-${item.id}`}
             ></div>
           );
         })}
