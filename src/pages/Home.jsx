@@ -1,28 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from "react";
 
-function Home() {
-    return (
-        <div className='home'>
-            <div className='home-content'>
-                <div className='home-content-subtitle'>
-                    so, you want to travel to
-                </div>
-                <h1 className='home-content-title'>space</h1>
-                <p className='home-content-body'>
-                    Let’s face it; if you want to go to space, you might as well
-                    genuinely go to outer space and not hover kind of on the
-                    edge of it. Well sit back, and relax because we’ll give you
-                    a truly out of this world experience!
-                </p>
-                <div className="home-content-explore">
-                    <Link to='/destination'>
-                        explore
-                    </Link> 
-                </div>
-            </div>
+const Home = () => {
+  useEffect(() => {
+    // adds the active class as page loads
+    let linkItem = document.querySelector("#home");
+    linkItem.classList.add("active");
+    console.log(linkItem);
+
+    return () => {
+      // remove the active class as the page unmounts
+      linkItem.classList.remove("active");
+    };
+  }, []);
+  return (
+    <section className=" background home-page-container">
+      <div className="home-page-content-container">
+        <div className="home-page-content-left">
+          <p className="home-page-content-left-1"> So, you want to travel to</p>
+          <h1 className="home-page-content-left-2"> Space</h1>
+          <p className="home-page-content-left-3">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
         </div>
-    )
-}
+        <div className="home-page-content-right-wrapper">
+          <div className="home-page-content-right">
+            <h2>Explore</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Home
+export default Home;
