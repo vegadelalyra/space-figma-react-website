@@ -70,8 +70,6 @@ body {
 }
 .logo {
     flex: 0 1 20%;
-    /* left: 5.5rem;
-  top: 6.4rem; */
 }
 
 .nav-line {
@@ -118,11 +116,6 @@ body {
     border-bottom: 3px solid #fff;
 }
 
-/* .nav-link-item:active,
-.nav-link-item:focus {
-  border-bottom: 3px solid #fff;
-} */
-
 .nav-link-item span {
     font-weight: 700;
     font-size: 1.6rem;
@@ -147,7 +140,7 @@ body {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(100deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -165,7 +158,6 @@ body {
     overflow: hidden;
 
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .home-page-content-left {
@@ -213,28 +205,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 .home-page-content-right {
-    /* margin-left: 35%;
-  margin-top: 10%; */
-
     background-color: #ffff;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     cursor: pointer;
+    outline: 0rem solid rgba(255, 255, 255, 0.136);
+    transition: outline 0.5s ease-in-out;
+}
+
+.home-page-content-right-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-page-content-right:hover {
+    outline: 7rem solid rgba(255, 255, 255, 0.136);
 }
 
 .home-page-content-right-wrapper:hover {
-    animation-name: bg;
     animation-timing-function: 500ms ease-in-out;
 }
 
@@ -292,7 +289,6 @@ body {
 .destination-page-content-left-2 {
     width: 100%;
     height: 100%;
-    /* background-color: aquamarine; */
 }
 
 .destination-page-content-left-2 img {
@@ -301,7 +297,7 @@ body {
     width: 40em;
     margin-left: 15%;
     animation-name: spin;
-    animation-duration: 5000ms;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -316,12 +312,6 @@ body {
 }
 
 .destination-page-content-right-nav {
-    /* background-color: bisque; */
-    /* position: absolute;
-  width: 80%;
-  top: 40%;
-  left: 52%; */
-
     padding: 2%;
     display: flex;
     margin-bottom: 5%;
@@ -363,7 +353,6 @@ body {
 .destination-page-content-right-2 {
     width: 100%;
     height: 100%;
-    /* background-color: aqua; */
     margin-bottom: 8%;
 }
 
@@ -451,8 +440,6 @@ body {
     left: 10%;
     width: 80%;
 
-    /* background-color: antiquewhite; */
-
     display: flex;
 }
 
@@ -531,7 +518,6 @@ body {
 
 .tech-page-title {
     position: absolute;
-    /* background-color: aqua; */
     top: 22%;
     left: 10%;
     width: 40%;
@@ -561,9 +547,6 @@ body {
     top: 29%;
     left: 10%;
     max-width: 100%;
-
-    /* background-color: antiquewhite; */
-
     display: flex;
     justify-content: space-between;
 }
@@ -583,8 +566,6 @@ body {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    /* background-color: var(--color-white); */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -717,6 +698,13 @@ body {
         margin: 0 auto;
         margin-top: 20%;
         margin-bottom: 10%;
+    }
+    .home-page-content-right-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none; /* Remove underline if needed */
+        color: inherit; /* Inherit text color from parent */
     }
     /* Destination Page */
     .destination-page-wrapper {
@@ -965,7 +953,6 @@ body {
     .home-page-content-right {
         width: 15rem;
         height: 15rem;
-
         align-self: flex-start;
         margin-top: 5%;
     }
@@ -989,6 +976,7 @@ body {
         font-size: 1.4rem;
     }
     .destination-page-content-left-1 {
+        place-content: center;
         transform: none;
     }
     .destination-page-content-left span {
@@ -998,9 +986,15 @@ body {
         font-size: 1.6rem;
     }
 
+    .destination-page-content-left-2 {
+        display: flex;
+        place-content: center;
+    }
+
     .destination-page-content-left-2 img {
         width: 25rem;
         height: 25rem;
+        margin: 0;
     }
 
     .destination-page-content-right-1 h1 {
@@ -1074,6 +1068,7 @@ body {
         width: 20rem;
         height: 25rem;
         margin: 0 auto;
+        position: static;
     }
 
     .crew-right-border {
