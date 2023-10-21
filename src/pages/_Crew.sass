@@ -1,0 +1,186 @@
+@import '../styles/vars'
+
+/* Crew Page
+.crew-page-container
+  background-image: url('/assets/crew/background-crew-desktop.jpg')
+
+.crew-page-title
+  position: absolute
+
+  /* background-color: aqua;
+  top: 25%
+  left: 10%
+  width: 40%
+  display: flex
+
+  span
+    font-weight: 700
+    font-size: 2.8rem
+    color: $--color-white
+    letter-spacing: 4px
+    opacity: 0.25
+    margin-right: 2%
+
+  p
+    font-weight: 400
+    font-size: 2.8rem
+    letter-spacing: 4px
+    text-transform: uppercase
+    color: $--color-white
+
+.crew-content-wrapper
+  position: absolute
+  top: 35%
+  left: 10%
+  width: 80%
+  display: flex
+
+.crew-content-left
+  display: flex
+  flex-direction: column
+
+.crew-content-left-1
+  p
+    font-family: 'Bellefair', serif
+    font-weight: 400
+    font-size: 3rem
+    text-transform: uppercase
+    color: $--color-white
+    opacity: 0.5
+    margin-bottom: 2%
+
+  h1
+    font-family: 'Bellefair', serif
+    font-weight: 400
+    font-size: 5.6rem
+    text-transform: uppercase
+    color: $--color-white
+
+.crew-content-left-2 p
+  font-weight: 400
+  font-size: 1.8rem
+  line-height: 3rem
+  padding-top: 5%
+  width: 60%
+  color: $--color-primary
+
+.crew-content-right img
+  display: block
+  width: 48rem
+  height: 60rem
+  position: fixed
+  bottom: 0
+  right: 15vw
+
+.dots-container
+  position: absolute
+  left: 10%
+  bottom: 10%
+  width: 20%
+  display: flex
+
+.dots
+  width: 1.5rem
+  height: 1.5rem
+  border-radius: 50%
+  margin-right: 5%
+  background-color: $--color-white
+  opacity: 0.17
+  cursor: pointer
+
+  &:hover
+    opacity: 0.5
+
+  &.active
+    opacity: 1
+
+@media only screen and (max-width: 700px)
+  .crew-page-title
+    width: 100%
+    top: 15%
+    left: 0
+    justify-content: center
+
+    span, p
+      font-size: 1.6rem
+
+  .crew-content-wrapper
+    top: 18%
+    flex-direction: column-reverse
+
+  .crew-content-left
+    flex: 0 1 70%
+    margin-top: 5%
+
+  .crew-content-left-1
+    margin-bottom: 5%
+
+    p
+      font-size: 1.6rem
+
+    h1
+      font-size: 2.4rem
+
+  .crew-content-left-2 p
+    font-size: 1.5rem
+    padding: 0
+
+  .crew-content-right
+    padding-top: 10%
+    width: 100%
+
+    img
+      flex: 0 1 30%
+      width: 20rem
+      height: 25rem
+      margin: 0 auto
+      position: static
+
+  .crew-right-border
+    display: block
+    width: 100%
+    border: 1px solid #383b4b
+
+  .dots-container
+    top: 55%
+    padding: 2%
+
+  .dots
+    width: 1rem
+    height: 1rem
+
+@media only screen and (max-width: 1000px)
+  .crew-page-title
+    top: 15%
+    left: 5%
+
+  .crew-content-wrapper
+    flex-direction: column
+    top: 22%
+    bottom: 0
+    align-items: center
+
+  .crew-content-left
+    text-align: center
+    margin-bottom: 10%
+
+  .crew-content-left-2 p
+    width: 100%
+    text-align: center
+    padding: 5%
+
+  .crew-content-right
+    flex: 0 1 80%
+
+    img
+      transform: none
+      margin-top: 25%
+
+  .crew-right-border
+    display: none
+
+  .dots-container
+    top: 45%
+    left: 0
+    justify-content: center
+    width: 100vw

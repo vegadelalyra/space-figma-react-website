@@ -1,0 +1,170 @@
+@import '../styles/vars'
+
+/* Home Page
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+.home-page-container
+  background-image: url('/assets/home/background-home-desktop.jpg')
+  overflow: hidden
+
+.home-page-content-container
+  position: absolute
+  width: 100%
+  left: 10%
+  top: 40%
+  overflow: hidden
+  display: flex
+
+.home-page-content-left
+  max-width: 32%
+  min-height: 38rem
+
+  /* background-color: aqua;
+
+.home-page-content-left-1
+  font-weight: 400
+  font-size: 2.8rem
+  line-height: 3.3rem
+  letter-spacing: 4px
+  color: $--color-primary
+  text-transform: uppercase
+  margin-bottom: 2rem
+
+.home-page-content-left-2
+  font-family: 'Bellefair', serif
+  font-weight: 400
+  font-size: 15rem
+  line-height: 17rem
+  text-transform: uppercase
+  color: $--color-white
+  margin-bottom: 5rem
+
+.home-page-content-left-3
+  font-weight: 400
+  font-size: 1.8rem
+  line-height: 3.2rem
+  color: $--color-primary
+  text-align: left
+
+.home-page-content-right-wrapper
+  margin-left: 25%
+  margin-top: 1%
+  background-color: transparent
+  mix-blend-mode: normal
+  height: 45rem
+  width: 45rem
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  animation-iteration-count: infinite
+
+.home-page-content-right
+  background-color: #ffff
+  width: 25rem
+  height: 25rem
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  text-transform: uppercase
+  cursor: pointer
+  outline: 0rem solid rgba(255, 255, 255, 0.136)
+  transition: outline 0.5s ease-in-out
+
+.home-page-content-right-link
+  text-decoration: none
+  color: inherit
+
+.home-page-content-right:hover
+  outline: 7rem solid rgba(255, 255, 255, 0.136)
+
+.home-page-content-right-wrapper:hover
+  animation-timing-function: 500ms ease-in-out
+
+.home-page-content-right h2
+  font-family: 'Bellefair', serif
+  font-weight: 400
+  font-size: 3rem
+  line-height: 3.5rem
+  letter-spacing: 2px
+
+@media only screen and (max-width: 700px)
+  .home-page-container
+    background-image: url('/assets/home/background-home-mobile.jpg')
+
+  .home-page-content-container
+    min-height: 40%
+    top: 15%
+
+  .home-page-content-left
+    max-width: 100%
+    padding: 5%
+
+  .home-page-content-left-1
+    font-size: 1.6rem
+    line-height: 1.9rem
+    letter-spacing: 2px
+
+  .home-page-content-left-2
+    font-size: 8rem
+    line-height: 10rem
+    margin-bottom: 5%
+
+  .home-page-content-left-3
+    font-size: 1.5rem
+    line-height: 2.5rem
+
+  .home-page-content-right-wrapper
+    width: 100%
+    margin: 0
+
+  .home-page-content-right
+    width: 15rem
+    height: 15rem
+    align-self: flex-start
+    margin-top: 5%
+
+    h2
+      font-size: 2rem
+      line-height: 2.2rem
+      letter-spacing: 1px
+
+@media only screen and (max-width: 1000px)
+  .home-page-container
+    background-image: url('/assets/home/background-home-tablet.jpg')
+
+  .home-page-content-container
+    min-height: 50%
+    flex-direction: column
+    top: 20%
+    left: 0
+
+  .home-page-content-left
+    max-width: 60%
+    text-align: center
+    margin: 0 auto
+
+  .home-page-content-left-3
+    text-align: center
+
+  .home-page-content-right
+    margin: 0 auto
+    margin-top: 20%
+    margin-bottom: 10%
+
+  .home-page-content-right-link
+    display: block
+    width: 100%
+    height: 100%
+    text-decoration: none
+
+    /* Remove underline if needed
+    color: inherit
+
+    /* Inherit text color from parent

@@ -1,0 +1,199 @@
+@import '../styles/vars'
+
+/* Technology Page
+.technology-page-container
+  background-image: url('/assets/technology/background-technology-desktop.jpg')
+
+.tech-page-title
+  position: absolute
+  top: 22%
+  left: 10%
+  width: 40%
+  display: flex
+
+  span
+    font-weight: 700
+    font-size: 2.8rem
+    color: $--color-white
+    letter-spacing: 4px
+    opacity: 0.25
+    margin-right: 2%
+
+  p
+    font-weight: 400
+    font-size: 2.8rem
+    letter-spacing: 4px
+    text-transform: uppercase
+    color: $--color-white
+
+.tech-page-content-wrapper
+  position: absolute
+  top: 29%
+  left: 10%
+  max-width: 100%
+  display: flex
+  justify-content: space-between
+
+.tech-page-content-left
+  flex: 0 1 50%
+  display: flex
+  align-items: center
+
+.tech-page-content-left-1
+  display: flex
+  flex-direction: column
+
+.tech-circle
+  width: 8rem
+  height: 8rem
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid rgba(255, 255, 255, 0.25)
+  cursor: pointer
+
+  &:not(:last-child)
+    margin-bottom: 35%
+
+  &:hover
+    border: 1px solid #ffff
+
+  span
+    font-family: 'Bellefair', serif
+    font-size: 3rem
+    font-weight: 400
+    text-align: center
+    color: $--color-white
+
+  &.active
+    background-color: #fff
+
+    span
+      color: #0b0d17
+
+.tech-page-content-left-2
+  margin-left: 10%
+
+.tech-content-title
+  text-transform: uppercase
+  font-weight: 400
+  font-size: 1.6rem
+  letter-spacing: 2px
+  color: #d0d6f9
+  margin-bottom: 2%
+
+.tech-page-content-left-2 h1
+  font-family: 'Bellefair', serif
+  font-weight: 400
+  text-transform: uppercase
+  color: #ffff
+  font-size: 5rem
+
+.tech-description
+  font-weight: 400
+  font-size: 1.8rem
+  line-height: 3.2rem
+  text-transform: none
+  color: #d0d6f9
+  margin-top: 5%
+  width: 90%
+
+.tech-page-content-right
+  flex: 0 1 50%
+
+  img
+    display: block
+    width: 80%
+    height: 50rem
+    margin-left: auto
+
+    /* transform: translateY(-5%);
+
+.tech-landscape
+  display: none
+
+@media only screen and (max-width: 700px)
+  .tech-page-title
+    width: 100%
+    left: 0
+    justify-content: center
+    top: 15%
+
+    span, p
+      font-size: 1.6rem
+
+  .tech-page-content-wrapper
+    top: 25%
+
+  .tech-landscape
+    height: 17rem
+
+  .tech-circle
+    height: 4rem
+    width: 4rem
+
+    span
+      font-size: 1.6rem
+
+  .tech-content-title
+    font-size: 1.4rem
+
+  .tech-page-content-left-2 h1
+    font-size: 2.5rem
+
+  .tech-description
+    font-size: 1.5rem
+    line-height: 2.5rem
+    padding: 0 5%
+
+@media only screen and (max-width: 1000px)
+  .tech-page-title
+    width: 100%
+    top: 10%
+    left: 5%
+    font-size: 2rem
+
+  .tech-page-content-wrapper
+    top: 20%
+    left: 0
+    flex-direction: column
+
+  .tech-landscape
+    display: block
+    width: 100%
+    height: 35rem
+
+  .tech-page-content-left
+    flex-direction: column
+    max-width: 100vw
+
+  .tech-page-content-left-1
+    flex-direction: row
+    width: 100%
+    align-items: center
+    justify-content: center
+    margin-top: 10%
+
+  .tech-circle
+    width: 6rem
+    height: 6rem
+
+    &:not(:last-child)
+      margin-bottom: 0
+      margin-right: 4%
+
+  .tech-page-content-left-2
+    margin-left: 0
+    text-align: center
+    margin-top: 5%
+
+  .tech-content-title h1
+    font-size: 4rem
+
+  .tech-description
+    width: 100%
+    padding: 0 12%
+
+  .tech-page-content-right
+    display: none
